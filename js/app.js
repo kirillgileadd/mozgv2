@@ -156,37 +156,37 @@
                   }
                 };
               return function (l, c) {
-                var d,
-                  u,
+                var u,
+                  d,
                   m,
-                  f,
-                  p = {
+                  p,
+                  f = {
                     cancelScroll: function (e) {
-                      cancelAnimationFrame(f),
-                        (f = null),
-                        e || s("scrollCancel", d);
+                      cancelAnimationFrame(p),
+                        (p = null),
+                        e || s("scrollCancel", u);
                     },
                     animateScroll: function (o, l, c) {
-                      p.cancelScroll();
-                      var u = n(d || t, c || {}),
+                      f.cancelScroll();
+                      var d = n(u || t, c || {}),
                         h =
                           "[object Number]" ===
                           Object.prototype.toString.call(o),
                         g = h || !o.tagName ? null : o;
                       if (h || g) {
                         var y = e.pageYOffset;
-                        u.header &&
+                        d.header &&
                           !m &&
-                          (m = document.querySelector(u.header));
+                          (m = document.querySelector(d.header));
                         var v,
                           w,
                           A,
-                          E,
                           S,
+                          E,
                           b,
                           L,
-                          x,
-                          q = r(m),
+                          q,
+                          x = r(m),
                           P = h
                             ? o
                             : (function (t, n, o, r) {
@@ -204,21 +204,21 @@
                                 );
                               })(
                                 g,
-                                q,
+                                x,
                                 parseInt(
-                                  "function" == typeof u.offset
-                                    ? u.offset(o, l)
-                                    : u.offset,
+                                  "function" == typeof d.offset
+                                    ? d.offset(o, l)
+                                    : d.offset,
                                   10
                                 ),
-                                u.clip
+                                d.clip
                               ),
                           O = P - y,
-                          C = i(),
-                          I = 0,
-                          M =
+                          _ = i(),
+                          k = 0,
+                          C =
                             ((v = O),
-                            (A = (w = u).speedAsDuration
+                            (A = (w = d).speedAsDuration
                               ? w.speed
                               : Math.abs((v / 1e3) * w.speed)),
                             w.durationMax && A > w.durationMax
@@ -226,16 +226,16 @@
                               : w.durationMin && A < w.durationMin
                               ? w.durationMin
                               : parseInt(A, 10)),
-                          T = function (t) {
+                          I = function (t) {
                             var n, i, r;
-                            E || (E = t),
-                              (I += t - E),
+                            S || (S = t),
+                              (k += t - S),
                               (b =
                                 y +
                                 O *
-                                  ((i = S =
-                                    1 < (S = 0 === M ? 0 : I / M) ? 1 : S),
-                                  "easeInQuad" === (n = u).easing &&
+                                  ((i = E =
+                                    1 < (E = 0 === C ? 0 : k / C) ? 1 : E),
+                                  "easeInQuad" === (n = d).easing &&
                                     (r = i * i),
                                   "easeOutQuad" === n.easing &&
                                     (r = i * (2 - i)),
@@ -279,26 +279,26 @@
                                 if (
                                   t == n ||
                                   i == n ||
-                                  (y < n && e.innerHeight + i) >= C
+                                  (y < n && e.innerHeight + i) >= _
                                 )
                                   return (
-                                    p.cancelScroll(!0),
+                                    f.cancelScroll(!0),
                                     a(o, n, h),
-                                    s("scrollStop", u, o, l),
-                                    !(f = E = null)
+                                    s("scrollStop", d, o, l),
+                                    !(p = S = null)
                                   );
                               })(b, P) ||
-                                ((f = e.requestAnimationFrame(T)), (E = t));
+                                ((p = e.requestAnimationFrame(I)), (S = t));
                           };
                         0 === e.pageYOffset && e.scrollTo(0, 0),
                           (L = o),
-                          (x = u),
+                          (q = d),
                           h ||
                             (history.pushState &&
-                              x.updateURL &&
+                              q.updateURL &&
                               history.pushState(
                                 {
-                                  smoothScroll: JSON.stringify(x),
+                                  smoothScroll: JSON.stringify(q),
                                   anchor: L.id,
                                 },
                                 document.title,
@@ -309,9 +309,9 @@
                           "matchMedia" in e &&
                           e.matchMedia("(prefers-reduced-motion)").matches
                             ? a(o, Math.floor(P), !1)
-                            : (s("scrollStart", u, o, l),
-                              p.cancelScroll(!0),
-                              e.requestAnimationFrame(T));
+                            : (s("scrollStart", d, o, l),
+                              f.cancelScroll(!0),
+                              e.requestAnimationFrame(I));
                       }
                     },
                   },
@@ -325,21 +325,21 @@
                         t.shiftKey
                       ) &&
                       "closest" in t.target &&
-                      (u = t.target.closest(l)) &&
-                      "a" === u.tagName.toLowerCase() &&
-                      !t.target.closest(d.ignore) &&
-                      u.hostname === e.location.hostname &&
-                      u.pathname === e.location.pathname &&
-                      /#/.test(u.href)
+                      (d = t.target.closest(l)) &&
+                      "a" === d.tagName.toLowerCase() &&
+                      !t.target.closest(u.ignore) &&
+                      d.hostname === e.location.hostname &&
+                      d.pathname === e.location.pathname &&
+                      /#/.test(d.href)
                     ) {
                       var n, i;
                       try {
-                        n = o(decodeURIComponent(u.hash));
+                        n = o(decodeURIComponent(d.hash));
                       } catch (t) {
-                        n = o(u.hash);
+                        n = o(d.hash);
                       }
                       if ("#" === n) {
-                        if (!d.topOnEmptyHash) return;
+                        if (!u.topOnEmptyHash) return;
                         i = document.documentElement;
                       } else i = document.querySelector(n);
                       (i = i || "#top" !== n ? i : document.documentElement) &&
@@ -361,15 +361,15 @@
                                 n || e.location.href
                               );
                           }
-                        })(d),
-                        p.animateScroll(i, u));
+                        })(u),
+                        f.animateScroll(i, d));
                     }
                   },
                   g = function (e) {
                     if (
                       null !== history.state &&
                       history.state.smoothScroll &&
-                      history.state.smoothScroll === JSON.stringify(d)
+                      history.state.smoothScroll === JSON.stringify(u)
                     ) {
                       var t = history.state.anchor;
                       ("string" == typeof t &&
@@ -377,16 +377,16 @@
                         !(t = document.querySelector(
                           o(history.state.anchor)
                         ))) ||
-                        p.animateScroll(t, null, { updateURL: !1 });
+                        f.animateScroll(t, null, { updateURL: !1 });
                     }
                   };
                 return (
-                  (p.destroy = function () {
-                    d &&
+                  (f.destroy = function () {
+                    u &&
                       (document.removeEventListener("click", h, !1),
                       e.removeEventListener("popstate", g, !1),
-                      p.cancelScroll(),
-                      (f = m = u = d = null));
+                      f.cancelScroll(),
+                      (p = m = d = u = null));
                   }),
                   (function () {
                     if (
@@ -398,15 +398,15 @@
                       )
                     )
                       throw "Smooth Scroll: This browser does not support the required JavaScript methods and browser APIs.";
-                    p.destroy(),
-                      (d = n(t, c || {})),
-                      (m = d.header ? document.querySelector(d.header) : null),
+                    f.destroy(),
+                      (u = n(t, c || {})),
+                      (m = u.header ? document.querySelector(u.header) : null),
                       document.addEventListener("click", h, !1),
-                      d.updateURL &&
-                        d.popstate &&
+                      u.updateURL &&
+                        u.popstate &&
                         e.addEventListener("popstate", g, !1);
                   })(),
-                  p
+                  f
                 );
               };
             })(i);
@@ -601,7 +601,7 @@
         }
       }
       var c = n(2);
-      let d = (e, t = !1, n = 300, o = 0) => {
+      let u = (e, t = !1, n = 300, o = 0) => {
         const i = document.querySelector(e);
         if (i) {
           let a = "",
@@ -609,7 +609,7 @@
           t &&
             ((a = "header.header"),
             (l = document.querySelector(a).offsetHeight));
-          let d = {
+          let u = {
             speedAsDuration: !0,
             speed: n,
             header: a,
@@ -621,7 +621,7 @@
               (r(), document.documentElement.classList.remove("menu-open")),
             void 0 !== c)
           )
-            new c().animateScroll(i, "", d);
+            new c().animateScroll(i, "", u);
           else {
             let e = i.getBoundingClientRect().top + scrollY;
             window.scrollTo({ top: l ? e - l : e, behavior: "smooth" });
@@ -629,16 +629,19 @@
           s(`[gotoBlock]: Юхуу...едем к ${e}`);
         } else s(`[gotoBlock]: Ой ой..Такого блока нет на странице: ${e}`);
       };
-      let u = !1;
+      let d = !1;
       setTimeout(() => {
-        if (u) {
+        if (d) {
           let e = new Event("windowScroll");
           window.addEventListener("scroll", function (t) {
             document.dispatchEvent(e);
           });
         }
-      }, 0),
-        (window.FLS = !0),
+      }, 0);
+      document.querySelector(".works__content"),
+        document.querySelectorAll(".work-category__item-box"),
+        document.querySelectorAll(".work-category__body");
+      (window.FLS = !0),
         (function (e) {
           let t = new Image();
           (t.onload = t.onerror =
@@ -718,10 +721,14 @@
               if (n.closest("[data-spoller]")) {
                 const i = n.closest("[data-spoller]"),
                   r = i.closest("[data-spollers]"),
-                  a = !!r.hasAttribute("data-one-spoller");
+                  a = document.querySelector(".works__content"),
+                  s = !!r.hasAttribute("data-one-spoller");
                 r.querySelectorAll("._slide").length ||
-                  (a && !i.classList.contains("_spoller-active") && c(r),
+                  (s &&
+                    !i.classList.contains("_spoller-active") &&
+                    (a.classList.remove("open"), c(r)),
                   i.classList.toggle("_spoller-active"),
+                  a.classList.toggle("open"),
                   ((e, n = 500) => {
                     e.hidden ? o(e, n) : t(e, n);
                   })(i.nextElementSibling, 500)),
@@ -729,10 +736,12 @@
               }
             }
             function c(e) {
-              const n = e.querySelector("[data-spoller]._spoller-active");
-              n &&
-                (n.classList.remove("_spoller-active"),
-                t(n.nextElementSibling, 500));
+              const n = document.querySelector(".works__content"),
+                o = e.querySelector("[data-spoller]._spoller-active");
+              o &&
+                (o.classList.remove("_spoller-active"),
+                n.classList.remove("open"),
+                t(o.nextElementSibling, 500));
             }
             i &&
               i.length &&
@@ -753,7 +762,7 @@
                   o = n.dataset.goto ? n.dataset.goto : "",
                   i = !!n.hasAttribute("data-goto-header"),
                   r = n.dataset.gotoSpeed ? n.dataset.gotoSpeed : "400";
-                d(o, i, r), e.preventDefault();
+                u(o, i, r), e.preventDefault();
               }
             } else if ("watcherCallback" === e.type && e.detail) {
               const t = e.detail.entry,

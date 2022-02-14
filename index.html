@@ -1,179 +1,310 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 
 <head>
+	<title>Главная</title>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220215001028">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Верстка «mozginkedV2»</title>
 </head>
 
 <body>
-	<div class="rootpage">
-		<h1>Верстка «mozginkedV2»</h1>
-		<div class="rootpage__info">
-			Особенности проекта
-		</div>
-		<h2>Готовые страницы:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">Главная</a></li>
-		</ol>
-		<h2>Попапы:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html#"></a></li>
-		</ol>
-		<div class="rootpage__tnx">
-			<h2>Спасибо за заказ!</h2>
-			<p>Буду рад (а) хорошему отзыву.</p>
-			<p>Обращайтесь еще!</p>
-		</div>
-		<div class="rootpage__contacts">
-			<h2>Мои контакты:</h2>
-			<p>Почта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
-			<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
-			<p>Соц. сеть: <a href="">ссылка на соц. сеть</a></p>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__inner">
+					<p class="header__subtitle">
+						TATTOS & ART
+					</p>
+					<div>
+						<picture><source srcset="img/stiker.webp"type="image/webp"><img class="header__logo" src="img/stiker.png" alt=""></picture>
+						<h1 class="header__title title">
+							Mozginked
+						</h1>
+					</div>
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<div class="preloader">
+							<img class="preloader__img" src="img/preloader.svg" alt="">
+						</div>
+						<nav class="menu__body menu__header">
+							<ul class="menu__list">
+								<li class="menu__item tab"><a href="" class="menu__link" data-goto=".about">ABOUT </a></li>
+								<li class="menu__item tab"><a href="" class="menu__link" data-goto=".works">WORKS </a></li>
+								<li class="menu__item tab"><a href="" class="menu__link" data-goto=".contacts">CONTACTS</a></li>
+								<li class="menu__item tab "><a href="#" class="menu__link">EN</a></li>
+								<li class="menu__item tab "><a href="#" class="menu__link">RU</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="about section">
+				<div class="about__inner">
+					<div class="about__navbar">
+						<h3 class="about__title title">About</h3>
+						<picture><source srcset="img/avatar2.webp"type="image/webp"><img src="img/avatar2.png" alt=""></picture>
+						<ul class="menu__list section__list">
+							<li class="menu__item tab about__tab"><a href="#" class="menu__link" data-goto=".about">ABOUT</a>
+							</li>
+							<li class="menu__item tab about__tab"><a href="#" class="menu__link" data-goto=".works">WORKS</a>
+							</li>
+							<li class="menu__item tab about__tab"><a href="#" class="menu__link" data-goto=".contacts">CONTACTS</a></li>
+							<li class="menu__item tab about__tab"><a href="#" class="menu__link">RU</a></li>
+							<li class="menu__item tab about__tab"><a href="#" class="menu__link">EN</a></li>
+						</ul>
+					</div>
+					<div class="about__content">
+						<div class="about__content-box">
+							<p class="about__content-subtitle">
+								I am a UX Designer and Art Director from Austria living in Berlin.
+							</p>
+							<p class="about__content-text">
+								Artworks and illustrations were my gateway to the creative industry which led to the foundation
+								of
+								my own studio and to first steps in the digital world.
+							</p>
+							<h6 class="about__content-title">
+								Tatto
+							</h6>
+							<p class="about__content-text">
+								Artworks and illustrations were my gateway to the creative industry which led to the foundation
+								of
+								my own studio and to first steps in the digital world.
+								<br> <br>
+								Soluta tempore inventore
+								aperiam
+								id rerum molestiae blanditiis adipisci quidem maxime eum laborum dolor est provident omnis
+								impedit,
+								quae a.
+							</p>
+							<p class="about__content-subtitle">
+								I am a UX Designer and Art Director from Austria living in Berlin.
+							</p>
+							<div class="about__content-price">
+								<h6 class="price__title about__content-title">Price</h6>
+								<p class="price__text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sunt maxime, mollitia animi,
+									illum reiciendis blanditiis nihil doloremque aspernatur voluptas error. Quasi aperiam qui
+									officiis commodi esse eveniet, sed id?
+								</p>
+								<div class="price__content">
+									<picture><source srcset="img/tom.webp"type="image/webp"><img src="img/tom.png" alt="" class="price__img"></picture>
+									<ul class="price__list">
+										<li class="price__item">
+											<p class="price__item-name">
+												One hour session
+											</p>
+											<span>2000₽</span>
+										</li>
+										<li class="price__item">
+											<p class="price__item-name">
+												Three hour session
+											</p>
+											<span>5000₽</span>
+										</li>
+										<li class="price__item">
+											<p class="price__item-name">
+												More than three hours
+											</p>
+											<span>8000₽</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="works">
+				<div class="works__inner">
+					<div class="works__navbar">
+						<div class="works__title-box">
+							<h3 class="works__title title">Works</h3>
+							<ul class="nav-tab__list">
+								<li class="nav-tab__item works__tab"><a href="" class="nav-tab__link">Colored /</a></li>
+								<li class="nav-tab__item works__tab"><a href="" class="nav-tab__link">Black and White /</a></li>
+								<li class="nav-tab__item works__tab"><a href="" class="nav-tab__link">Designs</a></li>
+							</ul>
+						</div>
+
+						<ul class="menu__list section__list">
+							<li class="menu__item tab works__tab"><a href="#" class="menu__link" data-goto=".about">ABOUT</a>
+							</li>
+							<li class="menu__item tab works__tab"><a href="#" class="menu__link" data-goto=".works">WORKS</a>
+							</li>
+							<li class="menu__item tab works__tab"><a href="#" class="menu__link" data-goto=".contacts">CONTACTS</a></li>
+							<li class="menu__item tab works__tab"><a href="#" class="menu__link">RU</a></li>
+							<li class="menu__item tab works__tab"><a href="#" class="menu__link">EN</a></li>
+						</ul>
+					</div>
+					<div class="works__content work-category">
+						<div class="work-category__inner">
+							<ul class="work-category__list" data-spollers data-one-spoller>
+								<li class="work-category__item work-category__item-1" data-goto=".work-category__item-1">
+									<div class="work-category__item-box" data-spoller>
+										<picture><source srcset="img/DART.webp"type="image/webp"><img class="work-category__img" src="img/DART.jpg" alt=""></picture>
+										<h6 class="work-category__title">
+											COLORED
+										</h6>
+										<div class="button-box">
+											<div class="button-box__inner">
+												<img src="img/weelBTNSVG.svg" class="button-box__img" alt="">
+												<button class="work-category__btn button-box__btn">
+													MORE
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="work-category__body spollers__body">
+										<div class="work-category__body-box">
+											<a href="https://source.unsplash.com/600x600/?sig=1" data-lightbox="homePortfolio">
+												<picture><source srcset="img/Colored/1.webp"type="image/webp"><img src="img/Colored/1.jpg" /></picture>
+											</a>
+											<a href="https://source.unsplash.com/600x800/?sig=12" data-lightbox="homePortfolio" class="vertical">
+												<picture><source srcset="img/Colored/2.webp"type="image/webp"><img src="img/Colored/2.jpg" /></picture>
+											</a>
+											<a href="https://source.unsplash.com/800x600/?sig=71" data-lightbox="homePortfolio">
+												<picture><source srcset="img/Colored/3.webp"type="image/webp"><img src="img/Colored/3.jpg" /></picture>
+											</a>
+											<a class="horizontal" href="https://source.unsplash.com/800x600/?sig=71" data-lightbox="homePortfolio">
+												<picture><source srcset="img/Colored/4.webp"type="image/webp"><img src="img/Colored/4.jpg" /></picture>
+											</a>
+											<a href="https://source.unsplash.com/800x600/?sig=71" data-lightbox="homePortfolio">
+												<picture><source srcset="img/Colored/5.webp"type="image/webp"><img src="img/Colored/5.jpg" /></picture>
+											</a>
+										</div>
+									</div>
+								</li>
+								<li class="work-category__item work-category__item-2" data-goto=".work-category__item-2">
+									<div class="work-category__item-box" data-spoller>
+										<picture><source srcset="img/OWL.webp"type="image/webp"><img class="work-category__img" src="img/OWL.jpg" alt=""></picture>
+										<h6 class="work-category__title">
+											BLACK AND WHITE
+										</h6>
+										<div class="button-box">
+											<div class="button-box__inner">
+												<img src="img/weelBTNSVG.svg" class="button-box__img" alt="">
+												<button class="work-category__btn button-box__btn">
+													MORE
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="work-category__body spollers__body">
+										<div class="work-category__body-box">
+											<a href="https://source.unsplash.com/600x600/?sig=1" data-lightbox="homePortfolio" class="vertical">
+												<picture><source srcset="img/BW/1.webp"type="image/webp"><img src="img/BW/1.jpg" /></picture>
+											</a>
+											<a href="https://source.unsplash.com/600x800/?sig=12" data-lightbox="homePortfolio" class="vertical">
+												<picture><source srcset="img/BW/2.webp"type="image/webp"><img src="img/BW/2.jpg" /></picture>
+											</a>
+											<a href="https://source.unsplash.com/800x600/?sig=71" data-lightbox="homePortfolio" class="vertical">
+												<picture><source srcset="img/BW/3.webp"type="image/webp"><img src="img/BW/3.jpg" /></picture>
+											</a>
+											<a class="horizontal" href="https://source.unsplash.com/800x600/?sig=71" data-lightbox="homePortfolio">
+												<picture><source srcset="img/BW/4.webp"type="image/webp"><img src="img/BW/4.jpg" /></picture>
+											</a>
+											<a href="https://source.unsplash.com/800x600/?sig=71" data-lightbox="homePortfolio" class="vertical">
+												<picture><source srcset="img/BW/5.webp"type="image/webp"><img src="img/BW/5.jpg" /></picture>
+											</a>
+										</div>
+									</div>
+								</li>
+								<li class="work-category__item work-category__item-3" data-goto=".work-category__item-3">
+									<div class="work-category__item-box" data-spoller>
+										<picture><source srcset="img/DESIGNS.webp"type="image/webp"><img class="work-category__img" src="img/DESIGNS.jpg" alt=""></picture>
+										<h6 class="work-category__title">
+											DESIGNS
+										</h6>
+										<div class="button-box">
+											<div class="button-box__inner">
+												<img src="img/weelBTNSVG.svg" class="button-box__img" alt="">
+												<button class="work-category__btn button-box__btn">
+													MORE
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="work-category__body spollers__body">
+										<div class="work-category__body-box">
+											<a href="https://source.unsplash.com/600x600/?sig=1" data-lightbox="homePortfolio">
+												<picture><source srcset="img/Desings/1.webp"type="image/webp"><img src="img/Desings/1.jpg" /></picture>
+											</a>
+											<a href="https://source.unsplash.com/600x800/?sig=12" data-lightbox="homePortfolio" class="vertical">
+												<picture><source srcset="img/Desings/2.webp"type="image/webp"><img src="img/Desings/2.jpg" /></picture>
+											</a>
+											<a class="horizontal" href="https://source.unsplash.com/800x600/?sig=71" data-lightbox="homePortfolio">
+												<picture><source srcset="img/Desings/3.webp"type="image/webp"><img src="img/Desings/3.jpg" /></picture>
+											</a>
+											<a href="https://source.unsplash.com/800x600/?sig=71" data-lightbox="homePortfolio">
+												<picture><source srcset="img/Desings/4.webp"type="image/webp"><img src="img/Desings/4.jpg" /></picture>
+											</a>
+											<a href="https://source.unsplash.com/800x600/?sig=71" data-lightbox="homePortfolio">
+												<picture><source srcset="img/Desings/5.webp"type="image/webp"><img src="img/Desings/5.jpg" /></picture>
+											</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="contacts">
+				<div class="contacts__inner">
+					<div class="contacts__navbar">
+						<h3 class="contacts__title title">Contacts</h3>
+						<ul class="menu__list section__list">
+							<li class="menu__item tab contacts__tab"><a href="#" class="menu__link" data-goto=".about">ABOUT</a>
+							</li>
+							<li class="menu__item tab contacts__tab"><a href="#" class="menu__link" data-goto=".works">WORKS</a>
+							</li>
+							<li class="menu__item tab contacts__tab"><a href="#" class="menu__link" data-goto=".contacts">CONTACTS</a></li>
+							<li class="menu__item tab contacts__tab"><a href="#" class="menu__link">RU</a></li>
+							<li class="menu__item tab contacts__tab"><a href="#" class="menu__link">EN</a></li>
+						</ul>
+					</div>
+					<div class="contacts__content">
+						123
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__inner">
+					<div>
+						<picture><source srcset="img/stiker.webp"type="image/webp"><img class="footer__logo" src="img/stiker.png" alt=""></picture>
+						<h1 class="footer__title title">
+							Mozginked
+						</h1>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
 		</div>
 	</div>
+</div>
+ -->
+
+	<script src="js/app.min.js?_v=20220215001028"></script>
 </body>
-<style>
-	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: #fff;
-		background-color: #5e5373;
-	}
-
-	body {
-		font-family: Montserrat;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #ebe691
-	}
-
-	a:visited {
-		text-decoration: underline;
-		color: #aaa768;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-	}
-
-	.rootpage {
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		color: #ebe691;
-		font-size: 2.5rem;
-		margin: 0px 0px 1.25rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		color: #ebe691;
-		font-size: 1.25rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0px 0px 1.5rem 0px;
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 200px;
-		padding: 20px 65px;
-		line-height: 140%;
-	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 40px;
-			padding: 20px;
-		}
-	}
-
-	.rootpage__contacts {
-		background: #32b5a4;
-
-	}
-
-	.rootpage__contacts a {
-		color: #ebe691;
-	}
-
-	.rootpage__tnx {
-		background: #c22d63;
-		margin: 0px 0px 1rem 0px;
-	}
-</style>
 
 </html>
