@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220215001028">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220215150926">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +27,6 @@
 						</h1>
 					</div>
 					<div class="header__menu menu">
-						<button type="button" class="menu__icon icon-menu"><span></span></button>
 						<div class="preloader">
 							<img class="preloader__img" src="img/preloader.svg" alt="">
 						</div>
@@ -129,9 +128,9 @@
 						<div class="works__title-box">
 							<h3 class="works__title title">Works</h3>
 							<ul class="nav-tab__list">
-								<li class="nav-tab__item works__tab"><a href="" class="nav-tab__link">Colored /</a></li>
-								<li class="nav-tab__item works__tab"><a href="" class="nav-tab__link">Black and White /</a></li>
-								<li class="nav-tab__item works__tab"><a href="" class="nav-tab__link">Designs</a></li>
+								<li data-goto=".work-category__item-1" class="nav-tab__item works__tab"><a href="" class="nav-tab__link">Colored /</a></li>
+								<li data-goto=".work-category__item-2" class="nav-tab__item works__tab"><a href="" class="nav-tab__link">Black and White /</a></li>
+								<li data-goto=".work-category__item-3" class="nav-tab__item works__tab"><a href="" class="nav-tab__link">Designs</a></li>
 							</ul>
 						</div>
 
@@ -147,10 +146,10 @@
 					</div>
 					<div class="works__content work-category">
 						<div class="work-category__inner">
-							<ul class="work-category__list" data-spollers data-one-spoller>
-								<li class="work-category__item work-category__item-1" data-goto=".work-category__item-1">
-									<div class="work-category__item-box" data-spoller>
-										<picture><source srcset="img/DART.webp"type="image/webp"><img class="work-category__img" src="img/DART.jpg" alt=""></picture>
+							<ul class="work-category__list">
+								<li class="work-category__item work-category__item-1">
+									<div class="work-category__item-box">
+										<picture><source srcset="img/DART.webp"type="image/webp"><img class="work-category__img" src="img/DART.jpg" alt=""></picture>`
 										<h6 class="work-category__title">
 											COLORED
 										</h6>
@@ -158,33 +157,33 @@
 											<div class="button-box__inner">
 												<img src="img/weelBTNSVG.svg" class="button-box__img" alt="">
 												<button class="work-category__btn button-box__btn">
-													MORE
+													<a class="button-box__link" href="https://vk.com/mozgink">MORE</a>
 												</button>
 											</div>
 										</div>
 									</div>
 									<div class="work-category__body spollers__body">
-										<div class="work-category__body-box">
-											<a href="https://source.unsplash.com/600x600/?sig=1" data-lightbox="homePortfolio">
-												<picture><source srcset="img/Colored/1.webp"type="image/webp"><img src="img/Colored/1.jpg" /></picture>
+										<div class="work-category__body-box" id="lightgallery" data-gallery>
+											<a class="work-category__link" href="img/Colored/1.jpg">
+												<picture><source srcset="img/Colored/1.webp"type="image/webp"><img class="work-category__img-photo" src="img/Colored/1.jpg" /></picture>
 											</a>
-											<a href="https://source.unsplash.com/600x800/?sig=12" data-lightbox="homePortfolio" class="vertical">
-												<picture><source srcset="img/Colored/2.webp"type="image/webp"><img src="img/Colored/2.jpg" /></picture>
+											<a href="img/Colored/2.jpg"" data-lightbox=" homePortfolio" class="vertical work-category__link">
+												<picture><source srcset="img/Colored/2.webp"type="image/webp"><img class="work-category__img-photo" src="img/Colored/2.jpg" /></picture>
 											</a>
-											<a href="https://source.unsplash.com/800x600/?sig=71" data-lightbox="homePortfolio">
-												<picture><source srcset="img/Colored/3.webp"type="image/webp"><img src="img/Colored/3.jpg" /></picture>
+											<a class="work-category__link" href="img/Colored/3.jpg" data-lightbox="homePortfolio">
+												<picture><source srcset="img/Colored/3.webp"type="image/webp"><img class="work-category__img-photo" src="img/Colored/3.jpg" /></picture>
 											</a>
-											<a class="horizontal" href="https://source.unsplash.com/800x600/?sig=71" data-lightbox="homePortfolio">
-												<picture><source srcset="img/Colored/4.webp"type="image/webp"><img src="img/Colored/4.jpg" /></picture>
+											<a class="horizontal work-category__link" href="img/Colored/4.jpg" data-lightbox="homePortfolio">
+												<picture><source srcset="img/Colored/4.webp"type="image/webp"><img class="work-category__img-photo" src="img/Colored/4.jpg" /></picture>
 											</a>
-											<a href="https://source.unsplash.com/800x600/?sig=71" data-lightbox="homePortfolio">
-												<picture><source srcset="img/Colored/5.webp"type="image/webp"><img src="img/Colored/5.jpg" /></picture>
+											<a class="work-category__link" href="img/Colored/5.jpg" data-lightbox="homePortfolio">
+												<picture><source srcset="img/Colored/5.webp"type="image/webp"><img class="work-category__img-photo" src="img/Colored/5.jpg" /></picture>
 											</a>
 										</div>
 									</div>
 								</li>
-								<li class="work-category__item work-category__item-2" data-goto=".work-category__item-2">
-									<div class="work-category__item-box" data-spoller>
+								<li class="work-category__item work-category__item-2">
+									<div class="work-category__item-box">
 										<picture><source srcset="img/OWL.webp"type="image/webp"><img class="work-category__img" src="img/OWL.jpg" alt=""></picture>
 										<h6 class="work-category__title">
 											BLACK AND WHITE
@@ -193,33 +192,33 @@
 											<div class="button-box__inner">
 												<img src="img/weelBTNSVG.svg" class="button-box__img" alt="">
 												<button class="work-category__btn button-box__btn">
-													MORE
+													<a class="button-box__link" href="https://vk.com/mozgink">MORE</a>
 												</button>
 											</div>
 										</div>
 									</div>
 									<div class="work-category__body spollers__body">
-										<div class="work-category__body-box">
-											<a href="https://source.unsplash.com/600x600/?sig=1" data-lightbox="homePortfolio" class="vertical">
-												<picture><source srcset="img/BW/1.webp"type="image/webp"><img src="img/BW/1.jpg" /></picture>
+										<div class="work-category__body-box" data-gallery>
+											<a href="img/BW/1.jpg" class="work-category__link ">
+												<picture><source srcset="img/BW/1.webp"type="image/webp"><img class="work-category__img-photo" src="img/BW/1.jpg" /></picture>
 											</a>
-											<a href="https://source.unsplash.com/600x800/?sig=12" data-lightbox="homePortfolio" class="vertical">
-												<picture><source srcset="img/BW/2.webp"type="image/webp"><img src="img/BW/2.jpg" /></picture>
+											<a href="img/BW/2.jpg" class="work-category__link ">
+												<picture><source srcset="img/BW/2.webp"type="image/webp"><img class="work-category__img-photo" src="img/BW/2.jpg" /></picture>
 											</a>
-											<a href="https://source.unsplash.com/800x600/?sig=71" data-lightbox="homePortfolio" class="vertical">
-												<picture><source srcset="img/BW/3.webp"type="image/webp"><img src="img/BW/3.jpg" /></picture>
+											<a href="img/BW/3.jpg" class="work-category__link ">
+												<picture><source srcset="img/BW/3.webp"type="image/webp"><img class="work-category__img-photo" src="img/BW/3.jpg" /></picture>
 											</a>
-											<a class="horizontal" href="https://source.unsplash.com/800x600/?sig=71" data-lightbox="homePortfolio">
-												<picture><source srcset="img/BW/4.webp"type="image/webp"><img src="img/BW/4.jpg" /></picture>
+											<a class="work-category__link horizontal" href="img/BW/4.jpg">
+												<picture><source srcset="img/BW/4.webp"type="image/webp"><img class="work-category__img-photo" src="img/BW/4.jpg" /></picture>
 											</a>
-											<a href="https://source.unsplash.com/800x600/?sig=71" data-lightbox="homePortfolio" class="vertical">
-												<picture><source srcset="img/BW/5.webp"type="image/webp"><img src="img/BW/5.jpg" /></picture>
+											<a href="img/BW/5.jpg" class="work-category__link ">
+												<picture><source srcset="img/BW/5.webp"type="image/webp"><img class="work-category__img-photo" src="img/BW/5.jpg" /></picture>
 											</a>
 										</div>
 									</div>
 								</li>
-								<li class="work-category__item work-category__item-3" data-goto=".work-category__item-3">
-									<div class="work-category__item-box" data-spoller>
+								<li class="work-category__item work-category__item-3">
+									<div class="work-category__item-box">
 										<picture><source srcset="img/DESIGNS.webp"type="image/webp"><img class="work-category__img" src="img/DESIGNS.jpg" alt=""></picture>
 										<h6 class="work-category__title">
 											DESIGNS
@@ -228,27 +227,27 @@
 											<div class="button-box__inner">
 												<img src="img/weelBTNSVG.svg" class="button-box__img" alt="">
 												<button class="work-category__btn button-box__btn">
-													MORE
+													<a class="button-box__link" href="https://vk.com/mozgink">MORE</a>
 												</button>
 											</div>
 										</div>
 									</div>
 									<div class="work-category__body spollers__body">
-										<div class="work-category__body-box">
-											<a href="https://source.unsplash.com/600x600/?sig=1" data-lightbox="homePortfolio">
-												<picture><source srcset="img/Desings/1.webp"type="image/webp"><img src="img/Desings/1.jpg" /></picture>
+										<div class="work-category__body-box" data-gallery>
+											<a class="work-category__link" href="img/Desings/1.jpg">
+												<picture><source srcset="img/Desings/1.webp"type="image/webp"><img class="work-category__img-photo" src="img/Desings/1.jpg" /></picture>
 											</a>
-											<a href="https://source.unsplash.com/600x800/?sig=12" data-lightbox="homePortfolio" class="vertical">
-												<picture><source srcset="img/Desings/2.webp"type="image/webp"><img src="img/Desings/2.jpg" /></picture>
+											<a class="work-category__link " href="img/Desings/2.jpg">
+												<picture><source srcset="img/Desings/2.webp"type="image/webp"><img class="work-category__img-photo" src="img/Desings/2.jpg" /></picture>
 											</a>
-											<a class="horizontal" href="https://source.unsplash.com/800x600/?sig=71" data-lightbox="homePortfolio">
-												<picture><source srcset="img/Desings/3.webp"type="image/webp"><img src="img/Desings/3.jpg" /></picture>
+											<a class="work-category__link " href="img/Desings/3.jpg">
+												<picture><source srcset="img/Desings/3.webp"type="image/webp"><img class="work-category__img-photo" src="img/Desings/3.jpg" /></picture>
 											</a>
-											<a href="https://source.unsplash.com/800x600/?sig=71" data-lightbox="homePortfolio">
-												<picture><source srcset="img/Desings/4.webp"type="image/webp"><img src="img/Desings/4.jpg" /></picture>
+											<a class="work-category__link" href="img/Desings/4.jpg">
+												<picture><source srcset="img/Desings/4.webp"type="image/webp"><img class="work-category__img-photo" src="img/Desings/4.jpg" /></picture>
 											</a>
-											<a href="https://source.unsplash.com/800x600/?sig=71" data-lightbox="homePortfolio">
-												<picture><source srcset="img/Desings/5.webp"type="image/webp"><img src="img/Desings/5.jpg" /></picture>
+											<a class="work-category__link" href="img/Desings/5.jpg">
+												<picture><source srcset="img/Desings/5.webp"type="image/webp"><img class="work-category__img-photo" src="img/Desings/5.jpg" /></picture>
 											</a>
 										</div>
 									</div>
@@ -274,7 +273,37 @@
 						</ul>
 					</div>
 					<div class="contacts__content">
-						123
+						<div class="contact-body">
+							<div class="contact-body__main">
+								<h6 class="contact-body__subtitle"><strong>If you want to collaborate on crafting amazing
+										experience for people – you are very welcome to contact me.</strong></h6>
+								<p class="contact-body__description">I am available for freelance projects and full-time
+									employment.
+
+								</p>
+								<h3 class="contact-body__title">Denis Mozgovoi</h3>
+								<a class="contact-body__link" href="mailto:mozgovoi@gmail.com?subject=Feedback&body=Message">
+									mozgovoi@gmail.com
+								</a>
+							</div>
+							<ul class="contact__social">
+								<li class="contact__social-item">
+									<a href="" class="contact__social__link">
+										<img class="contact__social-svg" src="img/icons/vk-svgrepo-com.svg" alt="">
+									</a>
+								</li>
+								<li class="contact__social-item">
+									<a href="" class="contact__social__link">
+										<img class="contact__social-svg" src="img/icons/instagram-svgrepo-com.svg" alt="">
+									</a>
+								</li>
+								<li class="contact__social-item">
+									<a href="" class="contact__social__link">
+										<img class="contact__social-svg" src="img/icons/telegram-svgrepo-com.svg" alt="">
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -304,7 +333,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220215001028"></script>
+	<script src="js/app.min.js?_v=20220215150926"></script>
 </body>
 
 </html>
