@@ -605,32 +605,32 @@
                 S(t, m),
                 i && (D(i, 1), A(e.callback_loading, t, i));
             },
-            W = function (t, e, i) {
+            Y = function (t, e, i) {
               i && t.setAttribute(e, i);
             },
-            Y = function (t, e) {
-              W(t, u, I(t, e.data_sizes)),
-                W(t, c, I(t, e.data_srcset)),
-                W(t, d, I(t, e.data_src));
+            W = function (t, e) {
+              Y(t, u, I(t, e.data_sizes)),
+                Y(t, c, I(t, e.data_srcset)),
+                Y(t, d, I(t, e.data_src));
             },
             X = {
               IMG: function (t, e) {
                 F(t, function (t) {
-                  V(t, N), Y(t, e);
+                  V(t, N), W(t, e);
                 }),
                   V(t, N),
-                  Y(t, e);
+                  W(t, e);
               },
               IFRAME: function (t, e) {
-                V(t, P), W(t, d, I(t, e.data_src));
+                V(t, P), Y(t, d, I(t, e.data_src));
               },
               VIDEO: function (t, e) {
                 B(t, function (t) {
-                  V(t, P), W(t, d, I(t, e.data_src));
+                  V(t, P), Y(t, d, I(t, e.data_src));
                 }),
                   V(t, H),
-                  W(t, g, I(t, e.data_poster)),
-                  W(t, d, I(t, e.data_src)),
+                  Y(t, g, I(t, e.data_poster)),
+                  Y(t, d, I(t, e.data_src)),
                   t.load();
               },
             },
@@ -1033,21 +1033,16 @@
           }
         },
         s = (t = 500) => {
-          let i = document.querySelector("body");
+          document.querySelector("body");
           if (e) {
-            let n = document.querySelectorAll("[data-lp]");
-            for (let t = 0; t < n.length; t++) {
-              n[t].style.paddingRight =
+            let i = document.querySelectorAll("[data-lp]");
+            for (let t = 0; t < i.length; t++) {
+              i[t].style.paddingRight =
                 window.innerWidth -
                 document.querySelector(".wrapper").offsetWidth +
                 "px";
             }
-            (i.style.paddingRight =
-              window.innerWidth -
-              document.querySelector(".wrapper").offsetWidth +
-              "px"),
-              document.documentElement.classList.add("lock"),
-              (e = !1),
+            (e = !1),
               setTimeout(function () {
                 e = !0;
               }, t);
@@ -3254,9 +3249,9 @@
       const U = function (t, e) {
           return new j(t, e);
         },
-        W = document.querySelectorAll("[data-gallery]");
-      W.length &&
-        W.forEach((t) => {
+        Y = document.querySelectorAll("[data-gallery]");
+      Y.length &&
+        Y.forEach((t) => {
           U(t, {
             licenseKey: "7EC452A9-0CFD441C-BD984C7C-17C8456E",
             speed: 500,
@@ -3284,19 +3279,18 @@
           }, 0);
         }),
         (function () {
-          let t = document.querySelector(".icon-menu"),
-            i = document.querySelector(".mobile-menu");
-          t &&
-            t.addEventListener("click", function (t) {
-              e &&
-                (((t = 500) => {
-                  document.documentElement.classList.contains("lock")
-                    ? n(t)
-                    : s(t);
-                })(),
-                i.classList.toggle("menu-open"),
-                document.documentElement.classList.toggle("menu-open"));
-            });
+          let t = document.querySelector(".icon-menu");
+          document.querySelector(".mobile-menu"),
+            t &&
+              t.addEventListener("click", function (t) {
+                e &&
+                  (((t = 500) => {
+                    document.documentElement.classList.contains("lock")
+                      ? n(t)
+                      : s(t);
+                  })(),
+                  document.documentElement.classList.toggle("menu-open"));
+              });
         })(),
         (function () {
           if (
