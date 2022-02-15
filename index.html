@@ -8,9 +8,9 @@
 	<!-- <style>body{opacity: 0;}</style> -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap&_v=20220215170829" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220215170829">
-	<!-- <link rel="shortcut icon" href="img//buttonBG.png" type="image/png"> -->
+	<link href="https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap&_v=20220215202854" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220215202854">
+	<link rel="shortcut icon" href="img/buttonBG.png" type="image/png">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -38,11 +38,13 @@
 						</div>
 						<nav class="menu__body menu__header">
 							<ul class="menu__list">
-								<li class="menu__item tab"><a href="" class="menu__link" data-goto=".about">ABOUT </a></li>
-								<li class="menu__item tab"><a href="" class="menu__link" data-goto=".works">WORKS </a></li>
-								<li class="menu__item tab"><a href="" class="menu__link" data-goto=".contacts">CONTACTS</a></li>
-								<li class="menu__item tab "><a href="#" class="menu__link">EN</a></li>
-								<li class="menu__item tab "><a href="#" class="menu__link">RU</a></li>
+								<li class="menu__item tab mobile-menu__item"><a href="" class="menu__link" data-goto=".about">ABOUT
+									</a></li>
+								<li class="menu__item tab mobile-menu__item"><a href="" class="menu__link" data-goto=".works">WORKS
+									</a></li>
+								<li class="menu__item tab mobile-menu__item"><a href="" class="menu__link" data-goto=".contacts">CONTACTS</a></li>
+								<li class="menu__item tab mobile-menu__item "><a href="#" class="menu__link">EN</a></li>
+								<li class="menu__item tab mobile-menu__item "><a href="#" class="menu__link">RU</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -50,83 +52,6 @@
 			</div>
 		</header>
 		<main class="page">
-			<section class="about section">
-				<div class="about__inner">
-					<div class="about__navbar">
-						<h3 class="about__title title">About</h3>
-						<picture><source srcset="img/avatar2.webp"type="image/webp"><img src="img/avatar2.png" alt=""></picture>
-						<ul class="menu__list section__list">
-							<li class="menu__item tab about__tab"><a href="#" class="menu__link" data-goto=".about">ABOUT</a>
-							</li>
-							<li class="menu__item tab about__tab"><a href="#" class="menu__link" data-goto=".works">WORKS</a>
-							</li>
-							<li class="menu__item tab about__tab"><a href="#" class="menu__link" data-goto=".contacts">CONTACTS</a></li>
-							<li class="menu__item tab about__tab"><a href="#" class="menu__link">RU</a></li>
-							<li class="menu__item tab about__tab"><a href="#" class="menu__link">EN</a></li>
-						</ul>
-					</div>
-					<div class="about__content">
-						<div class="about__content-box">
-							<p class="about__content-subtitle">
-								I am a UX Designer and Art Director from Austria living in Berlin.
-							</p>
-							<p class="about__content-text">
-								Artworks and illustrations were my gateway to the creative industry which led to the foundation
-								of
-								my own studio and to first steps in the digital world.
-							</p>
-							<h6 class="about__content-title">
-								Tatto
-							</h6>
-							<p class="about__content-text">
-								Artworks and illustrations were my gateway to the creative industry which led to the foundation
-								of
-								my own studio and to first steps in the digital world.
-								<br> <br>
-								Soluta tempore inventore
-								aperiam
-								id rerum molestiae blanditiis adipisci quidem maxime eum laborum dolor est provident omnis
-								impedit,
-								quae a.
-							</p>
-							<p class="about__content-subtitle">
-								I am a UX Designer and Art Director from Austria living in Berlin.
-							</p>
-							<div class="about__content-price">
-								<h6 class="price__title about__content-title">Price</h6>
-								<p class="price__text">
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae sunt maxime, mollitia animi,
-									illum reiciendis blanditiis nihil doloremque aspernatur voluptas error. Quasi aperiam qui
-									officiis commodi esse eveniet, sed id?
-								</p>
-								<div class="price__content">
-									<picture><source srcset="img/tom.webp"type="image/webp"><img src="img/tom.png" alt="" class="price__img"></picture>
-									<ul class="price__list">
-										<li class="price__item">
-											<p class="price__item-name">
-												One hour session
-											</p>
-											<span>2000₽</span>
-										</li>
-										<li class="price__item">
-											<p class="price__item-name">
-												Three hour session
-											</p>
-											<span>5000₽</span>
-										</li>
-										<li class="price__item">
-											<p class="price__item-name">
-												More than three hours
-											</p>
-											<span>8000₽</span>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
 
 			<section class="works">
 				<div class="works__inner">
@@ -264,6 +189,86 @@
 				</div>
 			</section>
 
+			<section class="about section">
+				<div class="about__inner">
+					<div class="about__navbar">
+						<h3 class="about__title title">About</h3>
+						<picture><source srcset="img/avatar2.webp"type="image/webp"><img src="img/avatar2.png" alt=""></picture>
+						<ul class="menu__list section__list">
+							<li class="menu__item tab about__tab"><a href="#" class="menu__link" data-goto=".about">ABOUT</a>
+							</li>
+							<li class="menu__item tab about__tab"><a href="#" class="menu__link" data-goto=".works">WORKS</a>
+							</li>
+							<li class="menu__item tab about__tab"><a href="#" class="menu__link" data-goto=".contacts">CONTACTS</a></li>
+							<li class="menu__item tab about__tab"><a href="#" class="menu__link">RU</a></li>
+							<li class="menu__item tab about__tab"><a href="#" class="menu__link">EN</a></li>
+						</ul>
+					</div>
+					<div class="about__content">
+						<div class="about__content-box">
+							<p class="about__content-subtitle">
+								Master of artistic tattooing.
+								I prefer to work in realism and graphics!
+							</p>
+							<p class="about__content-text">
+								I use only professional equipment, high-quality pigments and pay special attention to sterile,
+								disposable equipment
+							</p>
+							<h6 class="about__content-title">
+								Tatto
+							</h6>
+							<p class="about__content-text">
+								I am sure that the basis of a successful and interesting business can only be mutual respect and
+								respect for the interests of all its participants.
+								<br>
+								And what unites us is the desire to do
+								beautiful and truly original things.
+							</p>
+							<p class="about__content-subtitle">
+								The recording is open
+							</p>
+							<div class="about__content-price">
+								<h6 class="price__title about__content-title">Price</h6>
+								<p class="price__text">
+									No professional master will tell you how much it costs to get a tattoo, focusing only on the
+									size of the desired tattoo. Different images require a different approach and time. To
+									determine the cost, in addition to the size of the tattoo, you need to know all the other
+									details of the work.
+									<br>
+									For example, on which part of the body it is planned to apply a tattoo.
+									There are places that are more difficult in the work of a tattoo artist, which require more
+									time to apply the pattern.
+								</p>
+								<div class="price__content">
+									<picture><source srcset="img/tom.webp"type="image/webp"><img src="img/tom.png" alt="" class="price__img"></picture>
+									<ul class="price__list">
+										<li class="price__item">
+											<p class="price__item-name">
+												One hour session
+											</p>
+											<span>2000₽</span>
+										</li>
+										<li class="price__item">
+											<p class="price__item-name">
+												Three hour session
+											</p>
+											<span>5000₽</span>
+										</li>
+										<li class="price__item">
+											<p class="price__item-name">
+												More than three hours
+											</p>
+											<span>8000₽</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
 			<section class="contacts">
 				<div class="contacts__inner">
 					<div class="contacts__navbar">
@@ -294,18 +299,13 @@
 							</div>
 							<ul class="contact__social">
 								<li class="contact__social-item">
-									<a href="" class="contact__social__link">
+									<a href="https://vk.com/mozgink" class="contact__social__link">
 										<img class="contact__social-svg" src="img/icons/vk-svgrepo-com.svg" alt="">
 									</a>
 								</li>
 								<li class="contact__social-item">
-									<a href="" class="contact__social__link">
+									<a href="https://www.instagram.com/mozginked/?hl=ru" class="contact__social__link">
 										<img class="contact__social-svg" src="img/icons/instagram-svgrepo-com.svg" alt="">
-									</a>
-								</li>
-								<li class="contact__social-item">
-									<a href="" class="contact__social__link">
-										<img class="contact__social-svg" src="img/icons/telegram-svgrepo-com.svg" alt="">
 									</a>
 								</li>
 							</ul>
@@ -339,7 +339,7 @@
 </div>
  -->
 
-	<script src="js/app.min.js?_v=20220215170829"></script>
+	<script src="js/app.min.js?_v=20220215202854"></script>
 </body>
 
 </html>

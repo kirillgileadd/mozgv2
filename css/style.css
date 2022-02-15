@@ -440,7 +440,6 @@ html.menu-open .menu__link {
   padding: 10px;
   color: #FF9900;
   border-radius: 10px;
-  margin-bottom: 10px;
   transition: all 0.3s;
 }
 html.menu-open .menu__link:hover {
@@ -452,6 +451,10 @@ html.menu-open .menu__item:nth-child(4) {
 }
 html.menu-open .menu__item:nth-child(5) {
   display: none;
+}
+html.menu-open .mobile-menu__item {
+  font-size: 22px;
+  margin: 15px;
 }
 
 .footer {
@@ -798,6 +801,7 @@ html.menu-open .menu__item:nth-child(5) {
   color: #FF9900;
 }
 .contacts__content {
+  min-height: 100vh;
   padding: 15px;
   width: 50%;
 }
@@ -807,25 +811,24 @@ html.menu-open .menu__item:nth-child(5) {
   padding: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .contact-body__main {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .contact-body__subtitle {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 16px;
+  margin-bottom: 30px;
 }
 
 .contact-body__description {
   font-size: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .contact-body__title {
-  font-size: 22px;
+  font-size: 35px;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -834,7 +837,6 @@ html.menu-open .menu__item:nth-child(5) {
   color: #FF9900;
   text-decoration: underline !important;
   font-size: 16px;
-  margin-bottom: 20px;
 }
 
 .contact__social {
@@ -842,7 +844,7 @@ html.menu-open .menu__item:nth-child(5) {
 }
 
 .contact__social-item {
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .contact__social-svg {
@@ -1061,7 +1063,7 @@ html.menu-open .menu__item:nth-child(5) {
     width: 100%;
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 767px) {
   .button-box__inner {
     transform: translate(0px);
   }
@@ -1073,11 +1075,6 @@ html.menu-open .menu__item:nth-child(5) {
 
   .title {
     font-size: 57px;
-  }
-
-  .menu__item {
-    font-size: 12px;
-    padding: 0 10px;
   }
 
   .price__content {
